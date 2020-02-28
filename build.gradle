@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.nelkinda.tools'
+version '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 13
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter:5.6.0")
+    testImplementation("org.mockito:mockito-core:3.3.0")
+}
+
+test {
+    useJUnitPlatform()
+}
